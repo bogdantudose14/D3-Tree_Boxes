@@ -12,7 +12,7 @@ const dummyData = {
     type: "type3",
     code: "N1",
     label: "Node name 1",
-    version: "v1.0",
+    version: "v1.1",
     link: {
       name: "Link NODE NAME 1",
       nodeName: "NODE NAME 1",
