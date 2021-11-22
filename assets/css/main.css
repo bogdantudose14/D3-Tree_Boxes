@@ -1,0 +1,8 @@
+.modal-body {
+  display: flex;
+  justify-content: center;
+}
+
+.modal-body .select2-container {
+  flex-grow: 1;
+}
