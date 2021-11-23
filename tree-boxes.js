@@ -3,145 +3,145 @@
  * - d3.js
  * - jquery.js
  */
-"use strict";
+'use strict';
 
 const dummyData = {
   tree: {
-    nodeName: "NODE NAME 1",
-    name: "NODE NAME 1",
-    type: "type3",
-    code: "N1",
-    label: "Node name 1",
-    version: "v1.0",
+    nodeName: 'NODE NAME 1',
+    name: 'NODE NAME 1',
+    type: 'type3',
+    code: 'N1',
+    label: 'Node name 1',
+    version: 'v1.0',
     link: {
-      name: "Link NODE NAME 1",
-      nodeName: "NODE NAME 1",
-      direction: "ASYN",
+      name: 'Link NODE NAME 1',
+      nodeName: 'NODE NAME 1',
+      direction: 'ASYN',
     },
     children: [
       {
-        nodeName: "NODE NAME 2.1",
-        name: "NODE NAME 2.1",
-        type: "type1",
-        code: "N2.1",
-        label: "Node name 2.1",
-        version: "v1.0",
+        nodeName: 'NODE NAME 2.1',
+        name: 'NODE NAME 2.1',
+        type: 'type1',
+        code: 'N2.1',
+        label: 'Node name 2.1',
+        version: 'v1.0',
         link: {
-          name: "Link node 1 to 2.1",
-          nodeName: "NODE NAME 2.1",
-          direction: "SYNC",
+          name: 'Link node 1 to 2.1',
+          nodeName: 'NODE NAME 2.1',
+          direction: 'SYNC',
         },
         children: [
           {
-            nodeName: "NODE NAME 3.1",
-            name: "NODE NAME 3.1",
-            type: "type2",
-            code: "N3.1",
-            label: "Node name 3.1",
-            version: "v1.0",
+            nodeName: 'NODE NAME 3.1',
+            name: 'NODE NAME 3.1',
+            type: 'type2',
+            code: 'N3.1',
+            label: 'Node name 3.1',
+            version: 'v1.0',
             link: {
-              name: "Link node 2.1 to 3.1",
-              nodeName: "NODE NAME 3.1",
-              direction: "SYNC",
+              name: 'Link node 2.1 to 3.1',
+              nodeName: 'NODE NAME 3.1',
+              direction: 'SYNC',
             },
             children: [],
           },
           {
-            nodeName: "NODE NAME 3.2",
-            name: "NODE NAME 3.2",
-            type: "type2",
-            code: "N3.2",
-            label: "Node name 3.2",
-            version: "v1.0",
+            nodeName: 'NODE NAME 3.2',
+            name: 'NODE NAME 3.2',
+            type: 'type2',
+            code: 'N3.2',
+            label: 'Node name 3.2',
+            version: 'v1.0',
             link: {
-              name: "Link node 2.1 to 3.2",
-              nodeName: "NODE NAME 3.1",
-              direction: "SYNC",
+              name: 'Link node 2.1 to 3.2',
+              nodeName: 'NODE NAME 3.1',
+              direction: 'SYNC',
             },
             children: [],
           },
         ],
       },
       {
-        nodeName: "NODE NAME 2.2",
-        name: "NODE NAME 2.2",
-        type: "type1",
-        code: "N2.2",
-        label: "Node name 2.2",
-        version: "v1.0",
+        nodeName: 'NODE NAME 2.2',
+        name: 'NODE NAME 2.2',
+        type: 'type1',
+        code: 'N2.2',
+        label: 'Node name 2.2',
+        version: 'v1.0',
         link: {
-          name: "Link node 1 to 2.2",
-          nodeName: "NODE NAME 2.2",
-          direction: "ASYN",
+          name: 'Link node 1 to 2.2',
+          nodeName: 'NODE NAME 2.2',
+          direction: 'ASYN',
         },
         children: [],
       },
       {
-        nodeName: "NODE NAME 2.3",
-        name: "NODE NAME 2.3",
-        type: "type1",
-        code: "N2.3",
-        label: "Node name 2.3",
-        version: "v1.0",
+        nodeName: 'NODE NAME 2.3',
+        name: 'NODE NAME 2.3',
+        type: 'type1',
+        code: 'N2.3',
+        label: 'Node name 2.3',
+        version: 'v1.0',
         link: {
-          name: "Link node 1 to 2.3",
-          nodeName: "NODE NAME 2.3",
-          direction: "ASYN",
+          name: 'Link node 1 to 2.3',
+          nodeName: 'NODE NAME 2.3',
+          direction: 'ASYN',
         },
         children: [
           {
-            nodeName: "NODE NAME 3.3",
-            name: "NODE NAME 3.3",
-            type: "type1",
-            code: "N3.3",
-            label: "Node name 3.3",
-            version: "v1.0",
+            nodeName: 'NODE NAME 3.3',
+            name: 'NODE NAME 3.3',
+            type: 'type1',
+            code: 'N3.3',
+            label: 'Node name 3.3',
+            version: 'v1.0',
             link: {
-              name: "Link node 2.3 to 3.3",
-              nodeName: "NODE NAME 3.3",
-              direction: "ASYN",
+              name: 'Link node 2.3 to 3.3',
+              nodeName: 'NODE NAME 3.3',
+              direction: 'ASYN',
             },
             children: [
               {
-                nodeName: "NODE NAME 4.1",
-                name: "NODE NAME 4.1",
-                type: "type4",
-                code: "N4.1",
-                label: "Node name 4.1",
-                version: "v1.0",
+                nodeName: 'NODE NAME 4.1',
+                name: 'NODE NAME 4.1',
+                type: 'type4',
+                code: 'N4.1',
+                label: 'Node name 4.1',
+                version: 'v1.0',
                 link: {
-                  name: "Link node 3.3 to 4.1",
-                  nodeName: "NODE NAME 4.1",
-                  direction: "SYNC",
+                  name: 'Link node 3.3 to 4.1',
+                  nodeName: 'NODE NAME 4.1',
+                  direction: 'SYNC',
                 },
                 children: [],
               },
             ],
           },
           {
-            nodeName: "NODE NAME 3.4",
-            name: "NODE NAME 3.4",
-            type: "type1",
-            code: "N3.4",
-            label: "Node name 3.4",
-            version: "v1.0",
+            nodeName: 'NODE NAME 3.4',
+            name: 'NODE NAME 3.4',
+            type: 'type1',
+            code: 'N3.4',
+            label: 'Node name 3.4',
+            version: 'v1.0',
             link: {
-              name: "Link node 2.3 to 3.4",
-              nodeName: "NODE NAME 3.4",
-              direction: "ASYN",
+              name: 'Link node 2.3 to 3.4',
+              nodeName: 'NODE NAME 3.4',
+              direction: 'ASYN',
             },
             children: [
               {
-                nodeName: "NODE NAME 4.2",
-                name: "NODE NAME 4.2",
-                type: "type4",
-                code: "N4.2",
-                label: "Node name 4.2",
-                version: "v1.0",
+                nodeName: 'NODE NAME 4.2',
+                name: 'NODE NAME 4.2',
+                type: 'type4',
+                code: 'N4.2',
+                label: 'Node name 4.2',
+                version: 'v1.0',
                 link: {
-                  name: "Link node 3.4 to 4.2",
-                  nodeName: "NODE NAME 4.1",
-                  direction: "ASYN",
+                  name: 'Link node 3.4 to 4.2',
+                  nodeName: 'NODE NAME 4.1',
+                  direction: 'ASYN',
                 },
                 children: [],
               },
@@ -153,14 +153,16 @@ const dummyData = {
   },
 };
 
-function treeBoxes(urlService, jsonData) {
-  var urlService_ = "";
+var structuredData;
 
-  var blue = "#337ab7",
-    green = "#5cb85c",
-    yellow = "#f0ad4e",
-    blueText = "#4ab1eb",
-    purple = "#9467bd";
+function treeBoxes(urlService, jsonData) {
+  var urlService_ = '';
+
+  var blue = '#337ab7',
+    green = '#5cb85c',
+    yellow = '#f0ad4e',
+    blueText = '#4ab1eb',
+    purple = '#9467bd';
 
   var margin = {
       top: 0,
@@ -184,7 +186,7 @@ function treeBoxes(urlService, jsonData) {
     mouseWheelName,
     isKeydownZoom = false,
     mousePosition = {},
-    clickTarget = "";
+    clickTarget = '';
 
   var tree;
   var baseSvg,
@@ -205,17 +207,18 @@ function treeBoxes(urlService, jsonData) {
   init(urlService, jsonData);
   initSelect2();
   initModal();
+  initContextMenuEvents();
 
   function init(urlService, jsonData) {
     urlService_ = urlService;
     if (urlService && urlService.length > 0) {
-      if (urlService.charAt(urlService.length - 1) != "/") urlService_ += "/";
+      if (urlService.charAt(urlService.length - 1) != '/') urlService_ += '/';
     }
 
     if (jsonData) drawTree(jsonData);
     else {
       console.error(jsonData);
-      alert("Invalid data.");
+      alert('Invalid data.');
     }
   }
 
@@ -233,10 +236,10 @@ function treeBoxes(urlService, jsonData) {
       function (currentLevel) {
         maxDepth++;
         currentLevel.forEach(function (node) {
-          if (node.type == "type1") node.color = blue;
-          if (node.type == "type2") node.color = green;
-          if (node.type == "type3") node.color = yellow;
-          if (node.type == "type4") node.color = purple;
+          if (node.type == 'type1') node.color = blue;
+          if (node.type == 'type2') node.color = green;
+          if (node.type == 'type3') node.color = yellow;
+          if (node.type == 'type4') node.color = purple;
         });
       }
     );
@@ -257,40 +260,40 @@ function treeBoxes(urlService, jsonData) {
     root.y0 = 0;
 
     baseSvg = d3
-      .select("#tree-container")
-      .append("svg")
-      .attr("width", width + margin.right + margin.left)
-      .attr("height", height + margin.top + margin.bottom)
-      .attr("class", "svgContainer")
-      .classed("svg-content-responsive", true)
+      .select('#tree-container')
+      .append('svg')
+      .attr('width', width + margin.right + margin.left)
+      .attr('height', height + margin.top + margin.bottom)
+      .attr('class', 'svgContainer')
+      .classed('svg-content-responsive', true)
       .call(
         d3.behavior
           .zoom()
           //scaleExtent([0.5, 1.5]) // Limit the zoom scale
-          .on("zoom", zoomAndDrag)
+          .on('zoom', zoomAndDrag)
       );
 
     // Mouse wheel is desactivated, else after a first drag of the tree, wheel event drags the tree (instead of scrolling the window)
     getMouseWheelEvent();
-    d3.select("#tree-container").select("svg").on(mouseWheelName, null);
-    d3.select("#tree-container").select("svg").on("dblclick.zoom", null);
+    d3.select('#tree-container').select('svg').on(mouseWheelName, null);
+    d3.select('#tree-container').select('svg').on('dblclick.zoom', null);
 
     svgGroup = baseSvg
-      .append("g")
-      .attr("class", "drawarea")
-      .append("g")
-      .attr("transform", "translate(" + margin.left + "," + margin.top + ")");
+      .append('g')
+      .attr('class', 'drawarea')
+      .append('g')
+      .attr('transform', 'translate(' + margin.left + ',' + margin.top + ')');
 
     // SVG elements under nodeGroupTooltip could be associated with nodeGroup,
     // same for linkGroupToolTip and linkGroup,
     // but this separation allows to manage the order on which elements are drew
     // and so tooltips are always on top.
-    nodeGroup = svgGroup.append("g").attr("id", "nodes");
-    linkGroup = svgGroup.append("g").attr("id", "links");
-    linkGroupToolTip = svgGroup.append("g").attr("id", "linksTooltips");
-    nodeGroupTooltip = svgGroup.append("g").attr("id", "nodesTooltips");
+    nodeGroup = svgGroup.append('g').attr('id', 'nodes');
+    linkGroup = svgGroup.append('g').attr('id', 'links');
+    linkGroupToolTip = svgGroup.append('g').attr('id', 'linksTooltips');
+    nodeGroupTooltip = svgGroup.append('g').attr('id', 'nodesTooltips');
 
-    defs = baseSvg.append("defs");
+    defs = baseSvg.append('defs');
     initArrowDef();
     initDropShadow();
 
@@ -298,6 +301,8 @@ function treeBoxes(urlService, jsonData) {
   }
 
   function update(source) {
+    structuredData = source;
+
     // all the functions defined are wrapped in the same update function as we want to interact with the graph and
     //with every interaction we want to update it
     // Compute the new tree layout
@@ -317,11 +322,11 @@ function treeBoxes(urlService, jsonData) {
     });
 
     // 1) ******************* Update the nodes *******************
-    var node = nodeGroup.selectAll("g.node").data(nodes, function (d) {
+    var node = nodeGroup.selectAll('g.node').data(nodes, function (d) {
       return d.id || (d.id = ++i);
     });
     var nodesTooltip = nodeGroupTooltip
-      .selectAll("g")
+      .selectAll('g')
       .data(nodes, function (d) {
         return d.id || (d.id = ++i);
       });
@@ -335,53 +340,53 @@ function treeBoxes(urlService, jsonData) {
     //we want the nodes to start at the parents position and then transition
     var nodeEnter = node
       .enter()
-      .insert("g", "g.node")
-      .attr("class", "node")
-      .attr("transform", function (d) {
-        return "translate(" + source.y0 + "," + source.x0 + ")";
+      .insert('g', 'g.node')
+      .attr('class', 'node')
+      .attr('transform', function (d) {
+        return 'translate(' + source.y0 + ',' + source.x0 + ')';
       })
-      .on("click", function (d) {
+      .on('click', function (d) {
         click(d);
       })
-      .on("dblclick", function (d) {
-        d3.selectAll("g.node")
-          .append("circle")
-          .attr("r", 10)
-          .attr("cx", 100)
-          .attr("cy", 20)
-          .style("stroke", "gray")
-          .style("fill", (d) => {
-            return "orange";
+      .on('dblclick', function (d) {
+        d3.selectAll('g.node')
+          .append('circle')
+          .attr('r', 10)
+          .attr('cx', 100)
+          .attr('cy', 20)
+          .style('stroke', 'gray')
+          .style('fill', (d) => {
+            return 'orange';
           });
         // updateSourceData();
       });
     var nodeEnterTooltip = nodesTooltip
       .enter()
-      .append("g")
-      .attr("transform", function (d) {
-        return "translate(" + source.y0 + "," + source.x0 + ")";
+      .append('g')
+      .attr('transform', function (d) {
+        return 'translate(' + source.y0 + ',' + source.x0 + ')';
       });
 
     nodeEnter
-      .append("g")
-      .append("rect")
-      .attr("rx", 6)
-      .attr("ry", 6)
-      .attr("width", rectNode.width)
-      .attr("height", rectNode.height)
-      .attr("class", "node-rect")
-      .attr("fill", function (d) {
+      .append('g')
+      .append('rect')
+      .attr('rx', 6)
+      .attr('ry', 6)
+      .attr('width', rectNode.width)
+      .attr('height', rectNode.height)
+      .attr('class', 'node-rect')
+      .attr('fill', function (d) {
         // debugger;
         return d.color;
       })
-      .attr("filter", "url(#drop-shadow)")
-      .on("mouseover", function (d) {
-        $("#nodeExpandId" + d.id).css("visibility", "visible");
+      .attr('filter', 'url(#drop-shadow)')
+      .on('mouseover', function (d) {
+        $('#nodeExpandId' + d.id).css('visibility', 'visible');
       })
-      .on("mouseout", function (d) {
+      .on('mouseout', function (d) {
         // $("#nodeInfoID" + d.id).css("visibility", "hidden");
         // $("#nodeInfoTextID" + d.id).css("visibility", "hidden");
-        $("#nodeExpandId" + d.id).css("visibility", "hidden");
+        $('#nodeExpandId' + d.id).css('visibility', 'hidden');
       });
 
     // nodeEnter
@@ -432,65 +437,65 @@ function treeBoxes(urlService, jsonData) {
     //   });
 
     nodeEnterTooltip
-      .append("rect")
-      .attr("id", function (d) {
-        return "nodeInfoID" + d.id;
+      .append('rect')
+      .attr('id', function (d) {
+        return 'nodeInfoID' + d.id;
       })
-      .attr("x", rectNode.width / 2)
-      .attr("y", rectNode.height / 2)
-      .attr("width", tooltip.width)
-      .attr("height", tooltip.height)
-      .attr("class", "tooltip-box")
-      .style("fill-opacity", 0.9)
-      .on("mouseover", function (d) {
+      .attr('x', rectNode.width / 2)
+      .attr('y', rectNode.height / 2)
+      .attr('width', tooltip.width)
+      .attr('height', tooltip.height)
+      .attr('class', 'tooltip-box')
+      .style('fill-opacity', 0.9)
+      .on('mouseover', function (d) {
         //$("#nodeInfoID" + d.id).css("visibility", "visible");
         //$("#nodeInfoTextID" + d.id).css("visibility", "visible");
         // nodeEnter.append("text").text(function (d) {
         //   return "Name: " + d.name;
         // });
-        $("#nodeExpandId" + d.id).css("visibility", "visible");
+        $('#nodeExpandId' + d.id).css('visibility', 'visible');
 
         removeMouseEvents();
       })
-      .on("mouseout", function (d) {
-        $("#nodeInfoID" + d.id).css("visibility", "hidden");
-        $("#nodeInfoTextID" + d.id).css("visibility", "hidden");
+      .on('mouseout', function (d) {
+        $('#nodeInfoID' + d.id).css('visibility', 'hidden');
+        $('#nodeInfoTextID' + d.id).css('visibility', 'hidden');
         $; //("#nodeExpandId" + d.id).css("visibility", "hidden");
 
         reactivateMouseEvents();
       });
 
     nodeEnterTooltip
-      .append("svg:foreignObject")
-      .attr("id", function (d) {
-        return "nodeExpandId" + d.id;
+      .append('svg:foreignObject')
+      .attr('id', function (d) {
+        return 'nodeExpandId' + d.id;
       })
-      .attr("width", 20)
-      .attr("height", 22)
-      .attr("x", rectNode.width - 18)
-      .attr("y", 0)
-      .attr("class", "tooltip-node-add")
-      .append("xhtml:body")
+      .attr('width', 20)
+      .attr('height', 22)
+      .attr('x', rectNode.width - 18)
+      .attr('y', 0)
+      .attr('class', 'tooltip-node-add')
+      .append('xhtml:body')
       .html('<i class="bi bi-node-plus"></i>')
-      .on("click", function (d) {
-        $(".newNodeModalContainer").modal("show");
-        clickTarget = "node";
+      .on('click', function (d) {
+        $('.newNodeModalContainer').modal('show');
+        clickTarget = 'node';
         currentParrentNode = d;
       })
-      .on("mouseover", function (d) {
+      .on('mouseover', function (d) {
         //$("#nodeInfoID" + d.id).css("visibility", "visible");
         //$("#nodeInfoTextID" + d.id).css("visibility", "visible");
         // nodeEnter.append("text").text(function (d) {
         //   return "Name: " + d.name;
         // });
-        $("#nodeExpandId" + d.id).css("visibility", "visible");
+        $('#nodeExpandId' + d.id).css('visibility', 'visible');
 
         removeMouseEvents();
       })
-      .on("mouseout", function (d) {
+      .on('mouseout', function (d) {
         //$("#nodeInfoID" + d.id).css("visibility", "hidden");
         //$("#nodeInfoTextID" + d.id).css("visibility", "hidden");
-        $("#nodeExpandId" + d.id).css("visibility", "hidden");
+        $('#nodeExpandId' + d.id).css('visibility', 'hidden');
 
         reactivateMouseEvents();
       });
@@ -526,29 +531,29 @@ function treeBoxes(urlService, jsonData) {
     var nodeUpdate = node
       .transition()
       .duration(duration)
-      .attr("transform", function (d) {
-        return "translate(" + d.y + "," + d.x + ")";
+      .attr('transform', function (d) {
+        return 'translate(' + d.y + ',' + d.x + ')';
       });
     nodesTooltip
       .transition()
       .duration(duration)
-      .attr("transform", function (d) {
-        return "translate(" + d.y + "," + d.x + ")";
+      .attr('transform', function (d) {
+        return 'translate(' + d.y + ',' + d.x + ')';
       });
 
-    nodeUpdate.select("rect").attr("class", function (d) {
-      return d._children ? "node-rect-closed" : "node-rect";
+    nodeUpdate.select('rect').attr('class', function (d) {
+      return d._children ? 'node-rect-closed' : 'node-rect';
     });
 
-    nodeUpdate.select("text").style("fill-opacity", 1);
+    nodeUpdate.select('text').style('fill-opacity', 1);
 
     //Transition exiting nodes to the parent's new position (removing the nodes)
     var nodeExit = node
       .exit()
       .transition()
       .duration(duration)
-      .attr("transform", function (d) {
-        return "translate(" + source.y + "," + source.x + ")";
+      .attr('transform', function (d) {
+        return 'translate(' + source.y + ',' + source.x + ')';
       })
       .remove();
 
@@ -556,34 +561,34 @@ function treeBoxes(urlService, jsonData) {
       .exit()
       .transition()
       .duration(duration)
-      .attr("transform", function (d) {
-        return "translate(" + source.y + "," + source.x + ")";
+      .attr('transform', function (d) {
+        return 'translate(' + source.y + ',' + source.x + ')';
       })
       .remove();
 
-    nodeExit.select("text").style("fill-opacity", 1e-6);
+    nodeExit.select('text').style('fill-opacity', 1e-6);
 
     // 2) ******************* Update the links *******************
-    var link = linkGroup.selectAll("path").data(links, function (d) {
+    var link = linkGroup.selectAll('path').data(links, function (d) {
       return d.target.id;
     });
-    var linkTooltip = linkGroupToolTip.selectAll("g").data(links, function (d) {
+    var linkTooltip = linkGroupToolTip.selectAll('g').data(links, function (d) {
       return d.target.id;
     });
 
     function linkMarkerStart(direction, isSelected) {
-      if (direction == "SYNC") {
-        return isSelected ? "url(#start-arrow-selected)" : "url(#start-arrow)";
+      if (direction == 'SYNC') {
+        return isSelected ? 'url(#start-arrow-selected)' : 'url(#start-arrow)';
       }
-      return "";
+      return '';
     }
 
     function linkType(link) {
-      if (link.direction == "SYNC") return "Synchronous [\u2194]";
+      if (link.direction == 'SYNC') return 'Synchronous [\u2194]';
       else {
-        if (link.direction == "ASYN") return "Asynchronous [\u2192]";
+        if (link.direction == 'ASYN') return 'Asynchronous [\u2192]';
       }
-      return "???";
+      return '???';
     }
 
     d3.selection.prototype.moveToFront = function () {
@@ -596,42 +601,42 @@ function treeBoxes(urlService, jsonData) {
 
     var linkenter = link
       .enter()
-      .insert("path", "g")
-      .attr("class", "link")
-      .attr("id", function (d) {
-        return "linkID" + d.target.id;
+      .insert('path', 'g')
+      .attr('class', 'link')
+      .attr('id', function (d) {
+        return 'linkID' + d.target.id;
       })
-      .attr("d", function (d) {
+      .attr('d', function (d) {
         //d is the parameter that defines the path
         return diagonal(d);
       })
-      .attr("marker-end", "url(#end-arrow)")
-      .attr("marker-start", function (d) {
+      .attr('marker-end', 'url(#end-arrow)')
+      .attr('marker-start', function (d) {
         return linkMarkerStart(d.target.link.direction, false);
       })
-      .on("mouseover", function (d) {
+      .on('mouseover', function (d) {
         d3.select(this).moveToFront();
-        d3.select(this).attr("marker-end", "url(#end-arrow-selected)");
+        d3.select(this).attr('marker-end', 'url(#end-arrow-selected)');
         d3.select(this).attr(
-          "marker-start",
+          'marker-start',
           linkMarkerStart(d.target.link.direction, true)
         );
-        d3.select(this).attr("class", "linkselected");
+        d3.select(this).attr('class', 'linkselected');
 
         mousePosition.x = d3.event.clientX;
         mousePosition.y = d3.event.clientY;
 
-        $("#linkExpandId" + d.target.id).attr("x", function () {
+        $('#linkExpandId' + d.target.id).attr('x', function () {
           // d = d3.select(this).data()[0];
-          if (typeof mousePosition.x !== "undefined") {
+          if (typeof mousePosition.x !== 'undefined') {
             //debugger;
             return mousePosition.x - linkMouseXCorrection;
           }
           return (d.target.y + rectNode.width - d.source.y) / 2 + d.source.y;
         });
-        $("#linkExpandId" + d.target.id).attr("y", function () {
+        $('#linkExpandId' + d.target.id).attr('y', function () {
           // d = d3.select(this).data()[0];
-          if (typeof mousePosition.y !== "undefined") {
+          if (typeof mousePosition.y !== 'undefined') {
             return mousePosition.y - linkMouseYCorrection;
           }
           return (d.target.y + rectNode.width - d.source.y) / 2 + d.source.y;
@@ -646,20 +651,20 @@ function treeBoxes(urlService, jsonData) {
         //    (d.target.x - d.source.x) / 2 + d.source.x
         //  );
 
-        $("#tooltipLinkID" + d.target.id).css("visibility", "visible");
-        $("#tooltipLinkTextID" + d.target.id).css("visibility", "visible");
-        $("#linkExpandId" + d.target.id).css("visibility", "visible");
+        $('#tooltipLinkID' + d.target.id).css('visibility', 'visible');
+        $('#tooltipLinkTextID' + d.target.id).css('visibility', 'visible');
+        $('#linkExpandId' + d.target.id).css('visibility', 'visible');
       })
-      .on("mouseout", function (d) {
-        d3.select(this).attr("marker-end", "url(#end-arrow)");
+      .on('mouseout', function (d) {
+        d3.select(this).attr('marker-end', 'url(#end-arrow)');
         d3.select(this).attr(
-          "marker-start",
+          'marker-start',
           linkMarkerStart(d.target.link.direction, false)
         );
-        d3.select(this).attr("class", "link");
-        $("#tooltipLinkID" + d.target.id).css("visibility", "hidden");
-        $("#tooltipLinkTextID" + d.target.id).css("visibility", "hidden");
-        $("#linkExpandId" + d.target.id).css("visibility", "hidden");
+        d3.select(this).attr('class', 'link');
+        $('#tooltipLinkID' + d.target.id).css('visibility', 'hidden');
+        $('#tooltipLinkTextID' + d.target.id).css('visibility', 'hidden');
+        $('#linkExpandId' + d.target.id).css('visibility', 'hidden');
       });
 
     // GETTING BOUNDING BOX FOR SELECTION => TO DO : FIND ITS CENTER !!!
@@ -676,38 +681,38 @@ function treeBoxes(urlService, jsonData) {
 
     var linkEnterTooltip = linkTooltip
       .enter()
-      .append("g")
-      .attr("transform", function (d) {
+      .append('g')
+      .attr('transform', function (d) {
         //debugger;
         //return "translate(" + source.y0 + "," + source.x0 + ")";
       });
 
     linkEnterTooltip
-      .append("svg:foreignObject")
-      .attr("id", function (d) {
-        return "linkExpandId" + d.target.id;
+      .append('svg:foreignObject')
+      .attr('id', function (d) {
+        return 'linkExpandId' + d.target.id;
       })
-      .attr("x", function (d) {
+      .attr('x', function (d) {
         return 0; //(d.target.y - d.source.y + rectNode.width) / 2 + d.source.y;
       })
-      .attr("y", function (d) {
+      .attr('y', function (d) {
         return 0; //d.target.x - d.source.x;
       })
-      .attr("transform", function (d) {
+      .attr('transform', function (d) {
         //debugger; //correction after node children expansion
-        if (typeof translationLinkAdd !== "undefined")
+        if (typeof translationLinkAdd !== 'undefined')
           return (
-            "translate(" + translationLinkAdd + ")" + " scale(" + scale + ")"
+            'translate(' + translationLinkAdd + ')' + ' scale(' + scale + ')'
           );
         return;
         // return "translate(" + -source.y0 + "," + -source.x0 + ")";
       })
-      .attr("class", "tooltip-link-add")
-      .append("xhtml:body")
+      .attr('class', 'tooltip-link-add')
+      .append('xhtml:body')
       .html('<i class="bi bi-plus-circle-fill"></i>')
-      .on("click", function (d) {
-        $(".newNodeModalContainer").modal("show");
-        clickTarget = "edge";
+      .on('click', function (d) {
+        $('.newNodeModalContainer').modal('show');
+        clickTarget = 'edge';
         if (d.source) {
           currentParrentNode = d.source;
         }
@@ -716,16 +721,16 @@ function treeBoxes(urlService, jsonData) {
         }
         //debugger;
       })
-      .on("mouseover", function (d) {
+      .on('mouseover', function (d) {
         // debugger;
-        $("#tooltipLinkID" + d.target.id).css("visibility", "visible");
-        $("#tooltipLinkTextID" + d.target.id).css("visibility", "visible");
-        $("#linkExpandId" + d.target.id).css("visibility", "visible");
+        $('#tooltipLinkID' + d.target.id).css('visibility', 'visible');
+        $('#tooltipLinkTextID' + d.target.id).css('visibility', 'visible');
+        $('#linkExpandId' + d.target.id).css('visibility', 'visible');
       })
-      .on("mouseout", function (d) {
-        $("#tooltipLinkID" + d.target.id).css("visibility", "hidden");
-        $("#tooltipLinkTextID" + d.target.id).css("visibility", "hidden");
-        $("#linkExpandId" + d.target.id).css("visibility", "hidden");
+      .on('mouseout', function (d) {
+        $('#tooltipLinkID' + d.target.id).css('visibility', 'hidden');
+        $('#tooltipLinkTextID' + d.target.id).css('visibility', 'hidden');
+        $('#linkExpandId' + d.target.id).css('visibility', 'hidden');
       });
 
     // linkEnterTooltip
@@ -817,14 +822,14 @@ function treeBoxes(urlService, jsonData) {
     var linkUpdate = link
       .transition()
       .duration(duration)
-      .attr("d", function (d) {
+      .attr('d', function (d) {
         return diagonal(d);
       });
 
     linkTooltip
       .transition()
       .duration(duration)
-      .attr("d", function (d) {
+      .attr('d', function (d) {
         return diagonal(d);
       });
 
@@ -859,14 +864,14 @@ function treeBoxes(urlService, jsonData) {
       -Math.max(Math.min(translation[0], rbound), lbound),
       -Math.max(Math.min(translation[1], bbound), tbound),
     ];
-    d3.select(".drawarea").attr(
-      "transform",
-      "translate(" + translation + ")" + " scale(" + scale + ")"
+    d3.select('.drawarea').attr(
+      'transform',
+      'translate(' + translation + ')' + ' scale(' + scale + ')'
     );
 
-    d3.selectAll(".tooltip-link-add").attr(
-      "transform",
-      "translate(" + translationLinkAdd + ")" + " scale(" + scale + ")"
+    d3.selectAll('.tooltip-link-add').attr(
+      'transform',
+      'translate(' + translationLinkAdd + ')' + ' scale(' + scale + ')'
     );
   }
 
@@ -927,33 +932,33 @@ function treeBoxes(urlService, jsonData) {
 
   function removeMouseEvents() {
     // Drag and zoom behaviors are temporarily disabled, so tooltip text can be selected
-    mousedown = d3.select("#tree-container").select("svg").on("mousedown.zoom");
-    d3.select("#tree-container").select("svg").on("mousedown.zoom", null);
+    mousedown = d3.select('#tree-container').select('svg').on('mousedown.zoom');
+    d3.select('#tree-container').select('svg').on('mousedown.zoom', null);
   }
 
   function reactivateMouseEvents() {
     // Reactivate the drag and zoom behaviors
-    d3.select("#tree-container").select("svg").on("mousedown.zoom", mousedown);
+    d3.select('#tree-container').select('svg').on('mousedown.zoom', mousedown);
   }
 
   // Name of the event depends of the browser
   function getMouseWheelEvent() {
-    if (d3.select("#tree-container").select("svg").on("wheel.zoom")) {
-      mouseWheelName = "wheel.zoom";
-      return d3.select("#tree-container").select("svg").on("wheel.zoom");
+    if (d3.select('#tree-container').select('svg').on('wheel.zoom')) {
+      mouseWheelName = 'wheel.zoom';
+      return d3.select('#tree-container').select('svg').on('wheel.zoom');
     }
     if (
-      d3.select("#tree-container").select("svg").on("mousewheel.zoom") != null
+      d3.select('#tree-container').select('svg').on('mousewheel.zoom') != null
     ) {
-      mouseWheelName = "mousewheel.zoom";
-      return d3.select("#tree-container").select("svg").on("mousewheel.zoom");
+      mouseWheelName = 'mousewheel.zoom';
+      return d3.select('#tree-container').select('svg').on('mousewheel.zoom');
     }
-    if (d3.select("#tree-container").select("svg").on("DOMMouseScroll.zoom")) {
-      mouseWheelName = "DOMMouseScroll.zoom";
+    if (d3.select('#tree-container').select('svg').on('DOMMouseScroll.zoom')) {
+      mouseWheelName = 'DOMMouseScroll.zoom';
       return d3
-        .select("#tree-container")
-        .select("svg")
-        .on("DOMMouseScroll.zoom");
+        .select('#tree-container')
+        .select('svg')
+        .on('DOMMouseScroll.zoom');
     }
   }
 
@@ -982,109 +987,109 @@ function treeBoxes(urlService, jsonData) {
     p = p.map(function (d) {
       return [d.y, d.x];
     });
-    return "M" + p[0] + "C" + p[1] + " " + p[2] + " " + p[3]; // cubic curve (p[1] && p[2] are control points
+    return 'M' + p[0] + 'C' + p[1] + ' ' + p[2] + ' ' + p[3]; // cubic curve (p[1] && p[2] are control points
     //which define de slope of the line starting at each point)
   }
 
   function initDropShadow() {
     var filter = defs
-      .append("filter")
-      .attr("id", "drop-shadow")
-      .attr("color-interpolation-filters", "sRGB");
+      .append('filter')
+      .attr('id', 'drop-shadow')
+      .attr('color-interpolation-filters', 'sRGB');
 
     filter
-      .append("feOffset")
-      .attr("result", "offOut")
-      .attr("in", "SourceGraphic")
-      .attr("dx", 0)
-      .attr("dy", 0);
+      .append('feOffset')
+      .attr('result', 'offOut')
+      .attr('in', 'SourceGraphic')
+      .attr('dx', 0)
+      .attr('dy', 0);
 
-    filter.append("feGaussianBlur").attr("stdDeviation", 2);
-
-    filter
-      .append("feOffset")
-      .attr("dx", 2)
-      .attr("dy", 2)
-      .attr("result", "shadow");
+    filter.append('feGaussianBlur').attr('stdDeviation', 2);
 
     filter
-      .append("feComposite")
-      .attr("in", "offOut")
-      .attr("in2", "shadow")
-      .attr("operator", "over");
+      .append('feOffset')
+      .attr('dx', 2)
+      .attr('dy', 2)
+      .attr('result', 'shadow');
+
+    filter
+      .append('feComposite')
+      .attr('in', 'offOut')
+      .attr('in2', 'shadow')
+      .attr('operator', 'over');
   }
 
   function initArrowDef() {
     // Build the arrows definitions
     // End arrow
     defs
-      .append("marker")
-      .attr("id", "end-arrow")
-      .attr("viewBox", "0 -5 10 10")
-      .attr("refX", 0)
-      .attr("refY", 0)
-      .attr("markerWidth", 6)
-      .attr("markerHeight", 6)
-      .attr("orient", "auto")
-      .attr("class", "arrow")
-      .append("path")
-      .attr("d", "M0,-5L10,0L0,5");
+      .append('marker')
+      .attr('id', 'end-arrow')
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 0)
+      .attr('refY', 0)
+      .attr('markerWidth', 6)
+      .attr('markerHeight', 6)
+      .attr('orient', 'auto')
+      .attr('class', 'arrow')
+      .append('path')
+      .attr('d', 'M0,-5L10,0L0,5');
 
     // End arrow selected
     defs
-      .append("marker")
-      .attr("id", "end-arrow-selected")
-      .attr("viewBox", "0 -5 10 10")
-      .attr("refX", 0)
-      .attr("refY", 0)
-      .attr("markerWidth", 6)
-      .attr("markerHeight", 6)
-      .attr("orient", "auto")
-      .attr("class", "arrowselected")
-      .append("path")
-      .attr("d", "M0,-5L10,0L0,5");
+      .append('marker')
+      .attr('id', 'end-arrow-selected')
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 0)
+      .attr('refY', 0)
+      .attr('markerWidth', 6)
+      .attr('markerHeight', 6)
+      .attr('orient', 'auto')
+      .attr('class', 'arrowselected')
+      .append('path')
+      .attr('d', 'M0,-5L10,0L0,5');
 
     // Start arrow
     defs
-      .append("marker")
-      .attr("id", "start-arrow")
-      .attr("viewBox", "0 -5 10 10")
-      .attr("refX", 0)
-      .attr("refY", 0)
-      .attr("markerWidth", 6)
-      .attr("markerHeight", 6)
-      .attr("orient", "auto")
-      .attr("class", "arrow")
-      .append("path")
-      .attr("d", "M10,-5L0,0L10,5");
+      .append('marker')
+      .attr('id', 'start-arrow')
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 0)
+      .attr('refY', 0)
+      .attr('markerWidth', 6)
+      .attr('markerHeight', 6)
+      .attr('orient', 'auto')
+      .attr('class', 'arrow')
+      .append('path')
+      .attr('d', 'M10,-5L0,0L10,5');
 
     // Start arrow selected
     defs
-      .append("marker")
-      .attr("id", "start-arrow-selected")
-      .attr("viewBox", "0 -5 10 10")
-      .attr("refX", 0)
-      .attr("refY", 0)
-      .attr("markerWidth", 6)
-      .attr("markerHeight", 6)
-      .attr("orient", "auto")
-      .attr("class", "arrowselected")
-      .append("path")
-      .attr("d", "M10,-5L0,0L10,5");
+      .append('marker')
+      .attr('id', 'start-arrow-selected')
+      .attr('viewBox', '0 -5 10 10')
+      .attr('refX', 0)
+      .attr('refY', 0)
+      .attr('markerWidth', 6)
+      .attr('markerHeight', 6)
+      .attr('orient', 'auto')
+      .attr('class', 'arrowselected')
+      .append('path')
+      .attr('d', 'M10,-5L0,0L10,5');
   }
 
   function updateSourceDataTest() {
     dummyData.tree.children.push({
-      nodeName: "NODE NAME 0",
-      name: "NODE NAME 0",
-      type: "type3",
-      code: "N1",
-      label: "Node name 1",
-      version: "v1.0",
+      nodeName: 'NODE NAME 0',
+      name: 'NODE NAME 0',
+      type: 'type3',
+      code: 'N1',
+      label: 'Node name 1',
+      version: 'v1.0',
       link: {
-        name: "Link NODE NAME 1",
-        nodeName: "NODE NAME 1",
-        direction: "ASYN",
+        name: 'Link NODE NAME 1',
+        nodeName: 'NODE NAME 1',
+        direction: 'ASYN',
       },
       children: [],
     });
@@ -1101,12 +1106,11 @@ function treeBoxes(urlService, jsonData) {
         d.children.push(i);
       }
     });
-    // debugger;
+    debugger;
   }
 
   function addNewInBetweenNode(dSource, dTarget, item) {
     //addNewChildNode(dSource, item);
-    debugger;
     var dTargetChildindex;
     item.forEach(function (i) {
       if (dSource._children) {
@@ -1138,61 +1142,170 @@ function treeBoxes(urlService, jsonData) {
     });
   }
 
-  document.addEventListener("keypress", function (e) {
-    if (e.key && e.key == "Enter") {
-      exportAsXML();
-    }
-  });
   // #region COMPONENTS INIT
 
   function initModal() {
-    $(".btn-create").on("click", function (event) {
+    $('.btn-create').on('click', function (event) {
       var newItem = [
         {
-          nodeName: "NODE NAME Test",
-          name: "NODE NAME Test",
-          type: "type1",
-          code: "N4.3",
-          label: "Node name 4.3",
-          version: "v1.0",
+          nodeName: 'NODE NAME Test',
+          name: 'NODE NAME Test',
+          type: 'type1',
+          code: 'N4.3',
+          label: 'Node name 4.3',
+          version: 'v1.0',
           link: {
-            name: "Link node 3.4 to 4.2",
-            nodeName: "NODE NAME 4.1",
-            direction: "ASYN",
+            name: 'Link node 3.4 to 4.2',
+            nodeName: 'NODE NAME 4.1',
+            direction: 'ASYN',
           },
           children: [],
         },
       ];
       newItem[0].color = currentParrentNode.color;
 
-      if (clickTarget.indexOf("node") != -1) {
+      if (clickTarget.indexOf('node') != -1) {
         addNewChildNode(currentParrentNode, newItem);
-      } else if (clickTarget.indexOf("edge") != "-1") {
+      } else if (clickTarget.indexOf('edge') != '-1') {
         addNewInBetweenNode(currentParrentNode, currentChildNode, newItem);
       }
 
-      $(".newNodeModalContainer").modal("hide");
+      $('.newNodeModalContainer').modal('hide');
       update(root);
     });
   }
 
   function initSelect2() {
-    $(".node-type-select").select2({
-      theme: "classic",
-      dropdownParent: ".newNodeModalContainer",
+    $('.node-type-select').select2({
+      theme: 'classic',
+      dropdownParent: '.newNodeModalContainer',
     });
   }
 
   //#endregion
+
+  //  #region DOM-EVENT-HANDLING
+
+  document.addEventListener('keypress', function (e) {
+    if (e.key && e.key == 'Enter') {
+    }
+  });
+
+  document.addEventListener('contextmenu', function (e) {
+    e.preventDefault();
+    displayClassicContextMenu(e);
+  });
+
+  document.addEventListener('click', function (e) {
+    var menu = $('.d3-ctx-menu')[0];
+    if (typeof menu !== 'undefined') toggleMenu(menu, 'hide');
+  });
+
+  //  #endregion
 }
 
-function exportAsXML() {
-  const svg = document.querySelector("svg").cloneNode(true); // clone your original svg
-  document.body.appendChild(svg); // append element to document
-  const g = svg.querySelector("g"); // select the parent g
-  g.setAttribute("transform", ""); // clean transform
-  svg.setAttribute("width", g.getBBox().width); // set svg to be the g dimensions
-  svg.setAttribute("height", g.getBBox().height);
-  var svgAsXML = new XMLSerializer().serializeToString(svg);
-  console.log(svgAsXML);
+// #region CTX-MENU
+
+function initContextMenuEvents() {
+  const exportXML = document
+    .querySelector('.d3-ctx-menu-option.ctx-menu-exportXML')
+    .addEventListener('click', function () {
+      //var structuredData = dummyData.tree;  => HARDCODED
+      structuredData = dummyData.tree;
+      if (isJSON(structuredData)) exportAsXML(structuredData);
+      else {
+        throw new Error('Invalid format');
+      }
+    });
 }
+
+function displayClassicContextMenu(e, renderedPosition) {
+  e.preventDefault();
+  document.querySelector('.d3-ctx-menu').style.display = 'block';
+
+  //const left = renderedPosition.x;
+  //const top = renderedPosition.y;
+
+  const origin = {
+    left: e.pageX,
+    top: e.pageY,
+  };
+
+  var menu = $('.d3-ctx-menu')[0];
+
+  if (typeof menu !== 'undefined') setPosition(menu, origin);
+
+  return false;
+}
+
+function toggleMenu(menuType, command) {
+  if (menuType.style !== undefined)
+    menuType.style.display = command === 'show' ? 'inline-block' : 'none';
+}
+
+function setPosition(menuType, { top, left }) {
+  menuType.style.left = `${left + 5}px`;
+  menuType.style.top = `${top}px`;
+  toggleMenu(menuType, 'show');
+}
+
+// #endregion
+
+function exportAsXML(JSONData) {
+  // const svg = document.querySelector("svg").cloneNode(true); // clone your original svg
+  // document.body.appendChild(svg); // append element to document
+  // const g = svg.querySelector("g"); // select the parent g
+  // g.setAttribute("transform", ""); // clean transform
+  // svg.setAttribute("width", g.getBBox().width); // set svg to be the g dimensions
+  // svg.setAttribute("height", g.getBBox().height);
+  // var svgAsXML = new XMLSerializer().serializeToString(svg);
+  // console.log(svgAsXML);
+  debugger;
+
+  var x2js = new X2JS();
+  var xml = x2js.json2xml_str(JSONData); //Flatted.parse(Flatted.stringify(JSONData)));
+  var pretty_xml = vkbeautify.xml(xml, 6);
+
+  var string_data =
+    'data:text/xml; charset=utf-8,' + encodeURIComponent(pretty_xml);
+
+  var anchor = document.createElement('a');
+  anchor.setAttribute('href', string_data);
+  anchor.setAttribute(
+    'download',
+    `designTree-${new Date().toLocaleString()}.xml`
+  );
+
+  //console.log(pretty_xml);
+  anchor.click();
+  anchor.remove();
+}
+
+// # region UTILS
+
+function isJSON(obj) {
+  return obj !== undefined && obj !== null && obj.constructor == Object;
+}
+
+function OBJtoXML(obj) {
+  var xml = '';
+  for (var prop in obj) {
+    xml += obj[prop] instanceof Array ? '' : '<' + prop + '>';
+    if (obj[prop] instanceof Array) {
+      for (var array in obj[prop]) {
+        xml += '<' + prop + '>';
+        xml += OBJtoXML(new Object(obj[prop][array]));
+        xml += '</' + prop + '>';
+      }
+    } else if (typeof obj[prop] == 'object') {
+      xml += OBJtoXML(new Object(obj[prop]));
+    } else {
+      xml += obj[prop];
+    }
+    xml += obj[prop] instanceof Array ? '' : '</' + prop + '>';
+  }
+  var xml = xml.replace(/<\/?[0-9]{1,}>/g, '');
+  return xml;
+}
+
+// # endregion

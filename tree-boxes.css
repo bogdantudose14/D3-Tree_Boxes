@@ -157,3 +157,38 @@ p {
 a.exchangeName {
   color: orange;
 }
+
+.d3-ctx-menu {
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2) !important;
+  position: absolute;
+  display: none;
+  z-index: 10000;
+  background: transparent;
+  opacity: 0.9;
+}
+
+.d3-ctx-menu:hover {
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2) !important;
+}
+
+.d3-ctx-menu-option:hover {
+  background: rgba(0, 0, 0, 0.2);
+  box-shadow: 0 4px 5px 3px rgba(0, 0, 0, 0.2) !important;
+  color: white;
+  font-weight: 600;
+}
+
+.d3-ctx-menu-options {
+  list-style: none;
+  padding: 0 0;
+  z-index: 10000;
+  margin-bottom: 0px !important;
+}
+
+.d3-ctx-menu-option {
+  font-size: 1em;
+  font-family: 'Century Gothic';
+  padding: 10px 20px 10px 20px;
+  cursor: pointer;
+  z-index: 10000;
+}

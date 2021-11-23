@@ -1,0 +1,23 @@
+{
+  "name": "d3",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.html",
+  "dependencies": {
+    "browser-sync": "^2.27.7"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/bogdantudose14/D3.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/bogdantudose14/D3/issues"
+  },
+  "homepage": "https://github.com/bogdantudose14/D3#readme"
+}

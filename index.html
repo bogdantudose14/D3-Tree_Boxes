@@ -55,6 +55,15 @@
       integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
       crossorigin="anonymous"
     ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/x2js/1.2.0/xml2json.min.js"
+      integrity="sha512-HX+/SvM7094YZEKOCtG9EyjRYvK8dKlFhdYAnVCGNxMkA59BZNSZTZrqdDlLXp0O6/NjDb1uKnmutUeuzHb3iQ=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="./assets/js/vkbeautify.0.99.js"></script>
+    <script src="./assets/js/flatted3.2.4.min.js"></script>
+
     <!-- Blueprint packages (note: icons script must come first) -->
     <!-- <script src="https://unpkg.com/@blueprintjs/icons@^3.4.0"></script>
     <script src="https://unpkg.com/@blueprintjs/core@^3.10.0"></script> -->
@@ -71,10 +80,18 @@
     <div class="container">
       <ct-visualization id="tree-container"></ct-visualization>
       <script>
-        d3.json("data-example.json", function (error, json) {
-          treeBoxes("", json.tree);
+        d3.json('data-example.json', function (error, json) {
+          treeBoxes('', json.tree);
         });
       </script>
+
+      <div class="d3-ctx-menu">
+        <ul class="d3-ctx-menu-options">
+          <li class="d3-ctx-menu-option ctx-menu-exportXML" id="exportXML">
+            Export XML
+          </li>
+        </ul>
+      </div>
 
       <div
         class="newNodeModalContainer modal fade"
